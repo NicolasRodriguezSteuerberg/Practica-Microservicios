@@ -1,0 +1,23 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: course
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/courses
+    username: admin
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

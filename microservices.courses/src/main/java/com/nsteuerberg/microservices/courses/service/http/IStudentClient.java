@@ -9,7 +9,7 @@ import java.util.List;
 
 @FeignClient(
     name = "microservices.students",
-    url = "localhost:8081/api/student"
+    url = "localhost:8080/api/student"
 )
 public interface IStudentClient {
 
